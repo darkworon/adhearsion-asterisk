@@ -27,6 +27,7 @@ module Adhearsion
 
           ring_style = case ring_style
           when :ringing then 'r'
+          when :music_and_ringing then 'R'
           when :music then   ''
           when nil
           else bad_argument[:play => ring_style]
